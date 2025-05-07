@@ -14,7 +14,7 @@ $sql = "SELECT * FROM users";
 $getUser = $conn->prepare($sql);
 $getUser->execute();
 $users = $getUser->fetchAll();
-?>
+?> 
 
 <table>
 
