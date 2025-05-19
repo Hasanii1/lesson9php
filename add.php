@@ -5,7 +5,7 @@ if(isset($_POST['submit'])){
     $surname = $_POST['surname'];
     $email = $_POST['email'];
 
-    $sql = "insert into users (name, surname, email) values (:name, :surname, :email)";
+    $sql = "INSERT INTO users (name, surname, email) values (:name, :surname, :email)";
     $sqlQuery = $conn ->prepare($sql);
 
     $sqlQuery->bindParam(":name", $name);
